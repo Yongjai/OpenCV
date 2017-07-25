@@ -1,3 +1,3 @@
 ## OpenCV Example
 
-* ![draw edge](img/1.png)
+* [draw edge](img/1.png)
