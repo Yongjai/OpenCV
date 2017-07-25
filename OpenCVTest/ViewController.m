@@ -22,8 +22,8 @@
     if(!cvImage.empty()){
         using namespace cv;
         Mat gray;
-        cvtColor(cvImage, gray, CV_RGB2GRAY);//convert to single channel
-        GaussianBlur(gray, gray, cvSize(5, 5),1.2,1.2);//remove small details
+        cvtColor(cvImage, gray, CV_RGB2GRAY);
+        GaussianBlur(gray, gray, cvSize(5, 5),1.2,1.2);//디테일 제거
         
         Mat edges;
         Canny(gray, edges, 0, 100);  //윤곽선 인지
